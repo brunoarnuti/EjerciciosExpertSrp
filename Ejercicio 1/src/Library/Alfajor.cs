@@ -11,5 +11,16 @@ namespace Expert_SRP
         }
         public Double PrecioDulce {get;set;}
         public Double PrecioMasa {get; set;}
+
+        public Double GetPrecioTotal()
+        {
+            return this.PrecioDulce + this.PrecioMasa;
+        } 
+
+
+
+
     }
+
+
 }
