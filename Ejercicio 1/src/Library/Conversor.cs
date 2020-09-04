@@ -2,13 +2,19 @@ using System;
 
 namespace Expert_SRP
 {
-    public static class Conversor 
+    public class Conversor 
     {
-        public static Double ConvertirAPesos(Double dinero, String moneda)
+        private double monedaAConvertir;
+        
+        public Conversor(double monedaAConvertir = 0)
+        {
+            this.monedaAConvertir = monedaAConvertir;
+        }
+        public Double ConvertirAPesos(Double dinero, String moneda)
         {
             if (moneda.Equals("U$S")) 
             {
-                return dinero / 30;
+                return dinero / monedaAConvertir;
             } 
             else if (moneda.Equals("$")) 
             {
