@@ -5,6 +5,11 @@ namespace Library
 {
     public class AppointmentService
     {
+        // Tambien cabe destacar que esta clase se parece mas a un modelo de programacion procedural que uno orientado a objetos, no hay ningun objeto interactuando, sino que es simplemente un metodo y sus parametros
+        // Refiriendose a los parametros, me parece que este metodo maneja demasiados parametros, parametros que tienen gran relacion entre ellos, es decir, que bien podrian estar agrupados en un unico objeto "persona" u "doctor" por ejemplo
+        // Me resulta importante destacar tambien que el apponitment no queda guardado en ningun lugar, simplemente se devuelve en un string
+        // Por todo lo dicho anteriormente; esta clase, en particular este metodo, tiene mas de una razon de cambio, puede o bien cambiar porque la informacion necesaria para crear el appointment cambia, o bien porque la forma de mostrar la informacion cambia, eso viola el SRP.
+        // Lo sensato seria crear una clase User, Doctor, y Appointment
         public static string CreateAppointment(string name, string id, string phoneNumber, DateTime date, string appoinmentPlace, string doctorName)
         {
             StringBuilder stringBuilder = new StringBuilder("Scheduling appointment...\n");
