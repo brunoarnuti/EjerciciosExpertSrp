@@ -4,6 +4,7 @@
 ## Facultad de Ingeniería y Tecnologías
 ## Programación II
 
-### Expert y SRP
+### Ejercicios de clase
 
-Ejercicios de aplicación de Expert y SRP
+Ejercicios de aplicacion hechos en clase 
+Bruno Arnuti
